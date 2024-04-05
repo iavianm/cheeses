@@ -1,2 +1,21 @@
 .header {
+  height: 120px;
+  background-color: rgb(29, 47, 48);
+  display: flex;
+  justify-content: center;
+}
+
+.header__body {
+  display: flex;
+  max-width: 1280px;
+  width: 100%;
+  align-items: center;
+}
+
+.header__logo {
+  width: 62px;
+  height: 62px;
+  background: url("/images/cheese-logo.png") no-repeat center;
+  background-size: contain;
+  margin-left: 10px;
 }
