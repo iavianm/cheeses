@@ -1,8 +1,9 @@
 .header {
-  height: 120px;
-  background-color: rgb(29, 47, 48);
+  height: 90px;
+  background-color: #002a3a;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .header__body {
@@ -10,6 +11,7 @@
   max-width: 1280px;
   width: 100%;
   align-items: center;
+  justify-content: center;
 }
 
 .header__logo {

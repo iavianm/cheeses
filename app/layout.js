@@ -1,8 +1,8 @@
-import { Roboto } from "next/font/google";
+import { Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 
-const roboto = Roboto({
+const roboto = Roboto_Condensed({
   subsets: ["cyrillic"],
   weight: ["300", "400", "500", "700"],
 });
