@@ -19,3 +19,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+:root {
+  --blue-color: #1b0c42;
+  --blue-color-rgba: rgba(27, 12, 66, 0.4);
+  --orange-color: #cca820;
+  --orange-color-hover: #e3b10c;
+  --orange-color-active: #fad303;
+}
