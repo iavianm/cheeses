@@ -22,7 +22,7 @@ const Navigation = (props) => {
               }
             >
               <img
-                src={link.imgSrc}
+                src={link.src}
                 alt={link.label}
                 className={styles.nav__icon}
               />

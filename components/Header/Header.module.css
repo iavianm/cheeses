@@ -1,9 +1,12 @@
 .header {
+  width: 100vw;
   height: 90px;
   background-color: #002a3a;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  z-index: 2;
 }
 
 .header__body {
