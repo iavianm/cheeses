@@ -1,8 +1,6 @@
 "use client";
 import styles from "./SliderBlock.module.css";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -17,7 +15,7 @@ import Link from "next/link";
 
 const SliderBlock = (props) => {
   return (
-    <div className={styles.slider__section}>
+    <section className={styles.slider__section}>
       <Swiper
         modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
@@ -50,7 +48,7 @@ const SliderBlock = (props) => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </section>
   );
 };
 export default SliderBlock;

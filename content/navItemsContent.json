@@ -1,9 +1,8 @@
 {
   "navItems": [
-    { "label": "Главная", "href": "/", "src": "/images/cheese-logo.png" },
-    { "label": "Продукция", "href": "/catalog", "src": "/images/cheese-logo.png" },
-    { "label": "Контакты", "href": "/contacts", "src": "/images/cheese-logo.png" },
-    { "label": "О нас", "href": "/about", "src": "/images/cheese-logo.png" },
-    { "label": "Партнеры", "href": "/partners", "src": "/images/cheese-logo.png" }
+    { "label": "Продукция", "href": "/catalog", "src": "/images/products.svg" },
+    { "label": "Контакты", "href": "/contacts", "src": "/images/contacts.svg" },
+    { "label": "О нас", "href": "/about", "src": "/images/about.svg" },
+    { "label": "Партнеры", "href": "/partners", "src": "/images/partners.svg" }
   ]
 }

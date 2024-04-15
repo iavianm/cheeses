@@ -18,12 +18,11 @@
   text-decoration: none;
   color: #fff;
   display: flex;
+  transition: color 0.5s ease;
 }
 
 .nav__menu_item:hover {
-  transform: scale(1.01);
-  transition: transform 0.1s ease-in-out;
-  color: var(--orange-color-hover);
+  color: var(--orange-color-active);
 }
 
 .active {
@@ -34,6 +33,7 @@
   margin-right: 7px;
   width: 24px;
   height: 24px;
+  fill: #fff;
 }
 
 @media screen and (max-width: 768px) {
