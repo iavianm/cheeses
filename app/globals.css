@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  background-color: aliceblue;
 }
 
 html::-webkit-scrollbar,
@@ -51,4 +52,9 @@ a {
 
 .swiper-pagination-bullet-active {
   background-color: rgb(225, 82, 61) !important;
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  align-items: center !important;
 }
