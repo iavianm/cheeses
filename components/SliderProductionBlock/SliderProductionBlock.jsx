@@ -53,6 +53,23 @@ const SliderProductionBlock = (props) => {
                   alt={item.alt}
                   className={styles.slider__img_prod}
                 />
+                <div className={styles.lot__hover}>
+                  <ul className={styles.lot__list}>
+                    <li>
+                      Вес <span className={styles.lot__dashed}>125 грамм </span>
+                    </li>
+                    <li>
+                      МЖД <span className={styles.lot__dashed}>50 % </span>
+                    </li>
+                    <li>
+                      Срок хранения
+                      <span className={styles.lot__dashed}>60 суток </span>
+                    </li>
+                  </ul>
+                  <a href="" className={styles.lot__button}>
+                    подробнее
+                  </a>
+                </div>
               </div>
             </SwiperSlide>
           ))}
