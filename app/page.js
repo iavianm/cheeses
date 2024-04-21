@@ -4,6 +4,7 @@ import { cheesesImages } from "../content/sliderCheesesImages.json";
 import ProductionBlock from "@/components/ProductionBlock/ProductionBlock";
 import PartnersBlock from "@/components/PartnersBlock/PartnersBlock";
 import AboutBlock from "@/components/AboutBlock/AboutBlock";
+import Burgermenu from "@/components/Burgermenu/Burgermenu";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <ProductionBlock />
       <AboutBlock />
       <PartnersBlock />
+      <Burgermenu />
     </main>
   );
 }
