@@ -58,3 +58,12 @@ a {
   display: flex !important;
   align-items: center !important;
 }
+
+.ant-modal-content {
+  border-radius: 0 !important;
+  background-color: aliceblue !important;
+}
+
+.ant-modal-title {
+  background-color: aliceblue !important;
+}

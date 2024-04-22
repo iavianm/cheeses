@@ -1,0 +1,37 @@
+.order__button {
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 20px;
+  transition: color 0.5s ease;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.order__button:hover {
+  color: var(--orange-color-active);
+}
+
+.submit__button {
+  background-color: #002a3a;
+  color: #fff;
+}
+
+.submit__button:disabled {
+  background-color: #909293;
+  cursor: not-allowed;
+}
+
+.cancel__button {
+  background-color: #ffffff;
+}
+
+.cancel__button:hover {
+  border: 1px solid var(--orange-color-active) !important;
+  color: var(--orange-color-active) !important;
+}
