@@ -35,9 +35,9 @@ const Footer = () => {
             </div>
 
             <div className={styles.footer__address_links}>
-              <a href="tel:+79208888888">+7 920 888 88 88</a>
+              <a href="tel:+79105899322">+7 910 589 93 22</a>
 
-              <a href="mailto:somesite@yandex.ru">somesite@yandex.ru</a>
+              <a href="mailto:89105899322@mail.ru">89105899322@mail.ru</a>
             </div>
           </address>
         </div>

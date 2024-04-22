@@ -4,22 +4,29 @@ const AboutPage = () => {
   return (
     <section className={styles.about__section}>
       <div className={styles.about__container}>
-        <h2 className={styles.about__title}>Ясногорские сыры</h2>
-        <div className={styles.about__text_container}>
-          <div className={styles.about__text}>
-            <p>Тульская область, Ясногорский район,</p>
-            <p>д. Санталово</p>
-          </div>
-          <div className={styles.about__contacts}>
-            <a className={styles.about__contacts_link} href="tel:+79215567284">
-              +7 920 888 88 88
-            </a>
-            <a
-              className={styles.about__contacts_link}
-              href="mailto:somesite@yandex.ru"
-            >
-              somesite@yandex.ru
-            </a>
+        <div className={styles.about__title_container}>
+          <h2 className={styles.about__title}>Контакты</h2>
+          <div className={styles.about__body}>
+            <div className={styles.about__text_container}>
+              <div className={styles.about__text}>
+                <p>Тульская область</p>
+                <p>Ясногорский район, д. Санталово</p>
+              </div>
+              <a
+                className={styles.about__contacts_email}
+                href="mailto:89105899322@mail.ru"
+              >
+                89105899322@mail.ru
+              </a>
+            </div>
+            <div className={styles.about__text_container}>
+              <a
+                className={styles.about__contacts_phone}
+                href="tel:+79105899322"
+              >
+                +7 910 589 93 22
+              </a>
+            </div>
           </div>
         </div>
 
