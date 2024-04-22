@@ -30,6 +30,7 @@ const OrderPopup = () => {
 
   const showModal = () => {
     setIsModalVisible(true);
+    document.body.classList.add("body-no-scroll");
   };
 
   const handleOk = () => {
@@ -38,11 +39,13 @@ const OrderPopup = () => {
       console.log("Form data:", formData);
     }
     setIsModalVisible(false);
+    document.body.classList.remove("body-no-scroll");
     clearForm();
   };
 
   const handleCancel = () => {
     setIsModalVisible(false);
+    document.body.classList.remove("body-no-scroll");
     clearForm();
   };
 
@@ -194,6 +197,7 @@ const OrderPopup = () => {
               name="isConsentChecked"
               onChange={handleCheckboxChange}
               checked={formData.isConsentChecked}
+              className={styles.consent__text}
             >
               Отправляя данные с этой формы, вы даете согласие на обработку
               персональных данных

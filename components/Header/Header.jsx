@@ -12,7 +12,7 @@ function Header() {
         <Link href="/" className={styles.header__logo} />
         <Navigation navLinks={navItems} />
         <OrderPopup />
-        <BurgerMenu />
+        <BurgerMenu navLinks={navItems} />
       </div>
     </header>
   );
