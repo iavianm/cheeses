@@ -35,3 +35,9 @@
   border: 1px solid var(--orange-color-active) !important;
   color: var(--orange-color-active) !important;
 }
+
+@media screen and (max-width: 1024px) {
+  .order__button {
+    right: auto;
+  }
+}
