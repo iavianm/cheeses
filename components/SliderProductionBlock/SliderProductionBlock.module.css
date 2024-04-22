@@ -1,0 +1,137 @@
+.slider__block_container_prod {
+  position: relative;
+}
+
+.slider__section_prod {
+  position: relative;
+  height: 100%;
+}
+
+.slider__block_prod {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px 0;
+  padding: 0.5em 1em;
+}
+
+.slider__block_title_prod {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 0.1em 0;
+}
+
+.slider__block_button_prod {
+  display: block;
+  color: #fff;
+  padding: 1em 1.2em;
+  font-size: 16px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid white;
+  max-width: 200px;
+  text-align: center;
+  margin: 2em 0 0.5em 0;
+  font-weight: 300;
+  letter-spacing: 3px;
+  transition:
+    background-color 1s ease,
+    color 1s ease;
+}
+
+.slider__block_button_prod:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.slider__section_prod {
+  /*background-color: #1b0c42;*/
+  overflow: hidden;
+  width: 100%;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+.slider__img_prod {
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+  /*object-position: center;*/
+  border-radius: 6px;
+  transition: 0.4s;
+  position: relative;
+}
+
+.pagination__container_prod {
+  position: absolute !important;
+  width: 100% !important;
+  display: flex !important;
+  gap: 15px !important;
+  justify-content: center !important;
+  margin-top: 20px;
+  bottom: 0 !important;
+}
+
+.lot__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  transition: 0.4s;
+  z-index: 10;
+}
+
+.slider__block_container_prod:hover .lot__hover {
+  opacity: 1;
+}
+
+.lot__list {
+  margin-bottom: 20px;
+  color: #000;
+  line-height: 1.3;
+  padding: 0 20px;
+}
+
+.lot__list li {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.lot__list li:before {
+  content: "";
+  flex-grow: 1;
+  order: 2;
+  margin: 0 5px;
+  border-bottom: 1px dashed black;
+}
+
+.lot__dashed {
+  order: 3;
+}
+
+.lot__button {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  font-family: "DINPro", sans-serif;
+  letter-spacing: 1.4px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #002a3a;
+  transition: 0.4s;
+}
+
+.lot__button:hover {
+  background-color: #e1523d;
+}

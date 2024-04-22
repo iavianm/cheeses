@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./Navigation.module.css";
+import { ReactSVG } from "react-svg";
 
 const Navigation = (props) => {
   const pathname = usePathname();
@@ -21,7 +22,7 @@ const Navigation = (props) => {
                   : styles.nav__menu_item
               }
             >
-              <img
+              <ReactSVG
                 src={link.src}
                 alt={link.label}
                 className={styles.nav__icon}

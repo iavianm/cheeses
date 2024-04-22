@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   z-index: 2;
 }
 
@@ -15,12 +15,17 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+  position: relative;
+  margin: 0 1rem;
+  box-sizing: border-box;
 }
 
 .header__logo {
   width: 62px;
   height: 62px;
-  background: url("/images/cheese-logo.png") no-repeat center;
+  background: url("/images/logoY.png") no-repeat center;
   background-size: contain;
-  margin-left: 10px;
+  position: absolute;
+  left: 0;
+  filter: brightness(0) invert(1);
 }

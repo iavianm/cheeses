@@ -9,6 +9,13 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scrollbar-width: none;
+  background-color: aliceblue;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -24,8 +31,8 @@ a {
   --blue-color: #1b0c42;
   --blue-color-rgba: rgba(27, 12, 66, 0.4);
   --orange-color: #cca820;
-  --orange-color-hover: #e3b10c;
-  --orange-color-active: #fad303;
+  --orange-color-hover: rgb(225, 82, 61);
+  --orange-color-active: rgb(225, 82, 61);
 }
 
 .swiper-pagination {
@@ -36,7 +43,7 @@ a {
 }
 
 .swiper-pagination-bullet {
-  background-color: #ffffff !important;
+  background-color: #666464 !important;
   width: 12px !important;
   height: 12px !important;
   opacity: 1 !important;
@@ -44,5 +51,19 @@ a {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #f1d206 !important;
+  background-color: rgb(225, 82, 61) !important;
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.ant-modal-content {
+  border-radius: 0 !important;
+  background-color: aliceblue !important;
+}
+
+.ant-modal-title {
+  background-color: aliceblue !important;
 }

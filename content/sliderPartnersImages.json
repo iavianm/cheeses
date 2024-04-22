@@ -1,0 +1,39 @@
+{
+  "partnersImages": [
+    {
+      "id": 1,
+      "src": "/images/partners/1.png",
+      "alt": "Image 1",
+      "title": "Элит трэйд",
+      "link": "/"
+    },
+    {
+      "id": 2,
+      "src": "/images/partners/2.png",
+      "alt": "Image 2 ",
+      "title": "Папа джонс",
+      "link": "/"
+    },
+    {
+      "id": 3,
+      "src": "/images/partners/3.png",
+      "alt": "Image 3 ",
+      "title": "GFC",
+      "link": "/"
+    },
+    {
+      "id": 4,
+      "src": "/images/partners/4.png",
+      "alt": "Image 4 ",
+      "title": "PizzaHut",
+      "link": "/"
+    },
+    {
+      "id": 5,
+      "src": "/images/partners/5.png",
+      "alt": "Image 5 ",
+      "title": "Киприно",
+      "link": "/"
+    }
+  ]
+}
