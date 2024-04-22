@@ -36,6 +36,10 @@
   color: var(--orange-color-active) !important;
 }
 
+.consent__text {
+  font-size: 10px;
+}
+
 @media screen and (max-width: 1024px) {
   .order__button {
     right: auto;

@@ -27,6 +27,7 @@
 
 .active {
   color: var(--orange-color-active);
+  font-weight: 400;
 }
 
 .nav__icon {

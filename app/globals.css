@@ -67,3 +67,27 @@ a {
 .ant-modal-title {
   background-color: aliceblue !important;
 }
+
+.modal-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-modal {
+  top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .ant-modal {
+    top: 10px;
+  }
+}
+
+.ant-modal-mask {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.body-no-scroll {
+  overflow: hidden;
+}

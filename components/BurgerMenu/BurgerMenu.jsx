@@ -2,8 +2,11 @@
 import styles from "./BurgerMenu.module.css";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { ReactSVG } from "react-svg";
 
-function BurgerMenu() {
+function BurgerMenu(props) {
+  const pathname = usePathname();
   const [burgerOpened, setBurgerOpened] = useState(false);
 
   function handleOpenBurger() {
@@ -31,26 +34,49 @@ function BurgerMenu() {
             </button>
             <nav className={styles.burger__nav}>
               <ul className={styles.burger__list}>
-                <li>
-                  <Link href="/" className={styles.burger__item}>
-                    Продукция
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/" className={styles.burger__item}>
-                    Контакты
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/" className={styles.burger__item}>
-                    О нас
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/" className={styles.burger__item}>
-                    Партнеры
-                  </Link>
-                </li>
+                {props.navLinks.map((link) => {
+                  const isActive = pathname === link.href;
+
+                  return (
+                    <li key={link.label}>
+                      <Link
+                        href={link.href}
+                        className={
+                          isActive
+                            ? `${styles.active} ${styles.nav__menu_item}`
+                            : styles.nav__menu_item
+                        }
+                      >
+                        <ReactSVG
+                          src={link.src}
+                          alt={link.label}
+                          className={styles.nav__icon}
+                        />
+                        {link.label}
+                      </Link>
+                    </li>
+                  );
+                })}
+                {/*<li>*/}
+                {/*  <Link href="/" className={styles.burger__item}>*/}
+                {/*    Продукция*/}
+                {/*  </Link>*/}
+                {/*</li>*/}
+                {/*<li>*/}
+                {/*  <Link href="/" className={styles.burger__item}>*/}
+                {/*    Контакты*/}
+                {/*  </Link>*/}
+                {/*</li>*/}
+                {/*<li>*/}
+                {/*  <Link href="/" className={styles.burger__item}>*/}
+                {/*    О нас*/}
+                {/*  </Link>*/}
+                {/*</li>*/}
+                {/*<li>*/}
+                {/*  <Link href="/" className={styles.burger__item}>*/}
+                {/*    Партнеры*/}
+                {/*  </Link>*/}
+                {/*</li>*/}
               </ul>
             </nav>
           </div>
