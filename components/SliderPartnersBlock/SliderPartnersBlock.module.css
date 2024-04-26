@@ -13,7 +13,6 @@
   position: absolute;
   top: 50%;
   left: 5%;
-  /*background-color: rgba(0, 0, 0, 0.7);*/
   border-radius: 20px 0;
   padding: 0.5em 1em;
 }
@@ -50,7 +49,6 @@
 }
 
 .slider__section_prod {
-  /*background-color: #1b0c42;*/
   overflow: hidden;
   width: 100%;
   height: 20vh;
@@ -59,18 +57,12 @@
 
 .slider__img_prod {
   width: 80%;
-  /*height: 45vh;*/
   object-fit: contain;
   object-position: center;
   border-radius: 6px;
   transition: 0.4s;
   position: relative;
 }
-
-/*img.transparent-background {*/
-/*  !* Устанавливаем прозрачность (0 полностью прозрачный, 1 полностью непрозрачный) *!*/
-/*  opacity: 0.5;*/
-/*}*/
 
 .pagination__container_prod {
   position: absolute !important;
@@ -92,7 +84,7 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  background-color: rgba(240, 248, 255, 0.5);
+  background-color: rgba(240, 248, 255, 0.4);
   transition: 0.4s;
   z-index: 10;
 }
