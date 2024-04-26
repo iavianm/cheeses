@@ -43,5 +43,6 @@
 @media screen and (max-width: 1024px) {
   .order__button {
     right: auto;
+    left: auto;
   }
 }
