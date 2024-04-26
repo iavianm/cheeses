@@ -35,6 +35,17 @@ const SliderProductionBlock = (props) => {
             disableOnInteraction: false,
           }}
           speed={900}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+            },
+            576: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+          }}
         >
           {props.content.map((item, index) => (
             <SwiperSlide key={index}>

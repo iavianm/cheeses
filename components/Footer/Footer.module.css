@@ -22,6 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .footer__nav {
@@ -30,7 +31,6 @@
   margin: 0;
   display: flex;
   gap: 20px;
-  flex-direction: column;
 }
 
 .footer__nav li {
@@ -55,11 +55,7 @@
   filter: brightness(0) invert(1);
   max-width: 150px;
   width: 100%;
-}
-
-.footer__link {
-  display: inline-block;
-  text-decoration: none;
+  height: 100%;
 }
 
 .footer-contact {
@@ -80,15 +76,24 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /*margin: 40px 0 80px;*/
+  font-style: normal;
+  font-size: 14px;
+  text-align: right;
 }
 
-.footer__contact address,
-.footer__copy {
+.footer__contact address {
   margin: 0;
   padding: 0;
-  font-style: normal;
   text-align: right;
+  font-size: 0.6rem;
+}
+
+.footer__copy {
+  display: block;
+  margin: 15px 0 0 0;
+  padding: 0;
+  text-align: right;
+  font-size: 0.6rem;
 }
 
 .footer__contact a {
@@ -114,35 +119,12 @@
   line-height: 36px;
 }
 
-@media (max-width: 1150px) {
-  .footer__address_text {
-    line-height: 24px;
-    font-size: 12px;
-  }
+.footer__link {
+  width: 62px;
+  height: 62px;
 }
 
-@media (max-width: 1050px) {
-  .footer__address_text {
-    line-height: 28px;
-    font-size: 14px;
-  }
-
-  .footer__nav {
-    gap: 20px;
-  }
-
-  .footer__nav a {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 930px) {
-  .footer__address_text {
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .footer__content {
     flex-direction: column;
   }
@@ -158,14 +140,15 @@
     margin-bottom: 20px;
   }
 
-  .footer__contact address,
-  .footer__copy {
-    text-align: center;
-    margin-bottom: 10px;
+  .footer__link {
+    position: absolute;
+    left: 0;
+    width: 62px;
+    height: 62px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 568px) {
   .footer__nav a {
     font-size: 14px;
   }
@@ -180,38 +163,14 @@
   }
 
   .footer__copy {
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     line-height: 14px;
     font-size: 10px;
   }
-
-  .footer__link {
-    position: absolute;
-    top: 45%;
-    left: 30%;
-    right: 30%;
-  }
 }
 
-@media (max-width: 400px) {
-  .footer__copy {
-    margin-top: 40px;
-  }
-
+@media (max-width: 440px) {
   .footer__link {
-    top: 50%;
-  }
-
-  .footer__address_text {
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 340px) {
-  .footer__nav {
-    gap: 10px;
-  }
-  .footer__address_text {
-    font-size: 9px;
+    display: none;
   }
 }

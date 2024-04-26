@@ -33,3 +33,23 @@
 .production__head_link:hover {
   color: var(--orange-color-active);
 }
+
+@media screen and (max-width: 576px) {
+  .production__head {
+    flex-direction: column;
+  }
+
+  .production__container {
+    padding: 3rem 1rem;
+  }
+}
+
+@media screen and (max-width: 389px) {
+  .production__head {
+    padding: 2rem 0 2rem 0;
+  }
+
+  .production__container {
+    padding: 1rem 1rem;
+  }
+}

@@ -2,6 +2,8 @@
   height: calc(100vh - 90px);
   display: flex;
   justify-content: center;
+  z-index: 2;
+  position: relative;
 }
 
 .partners__container {
@@ -42,4 +44,39 @@
   text-justify: inter-word;
   line-height: 1.6;
   font-weight: 300;
+}
+
+@media screen and (max-width: 576px) {
+  .partners__head {
+    flex-direction: column;
+  }
+
+  .partners__article {
+    margin-bottom: 50px;
+    font-size: 0.95rem;
+    hyphens: auto;
+    word-break: break-word;
+    text-justify: inter-word;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  .partners__container {
+    padding: 3rem 1rem;
+  }
+}
+
+@media screen and (max-width: 389px) {
+  .partners__head {
+    padding: 2rem 0 2rem 0;
+  }
+
+  .partners__container {
+    padding: 1rem 1rem;
+  }
+
+  .partners__article {
+    font-size: 0.875rem;
+    margin-bottom: 30px;
+  }
 }

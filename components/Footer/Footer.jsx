@@ -27,12 +27,12 @@ const Footer = () => {
           </ul>
 
           <address className={styles.footer__address}>
-            <div>
-              <p className={styles.footer__address_text}>
-                Тульская область, Ясногорский район,
-              </p>
-              <p className={styles.footer__address_text}>д. Санталово</p>
-            </div>
+            {/*<div>*/}
+            {/*  <p className={styles.footer__address_text}>*/}
+            {/*    Тульская область, Ясногорский район,*/}
+            {/*  </p>*/}
+            {/*  <p className={styles.footer__address_text}>д. Санталово</p>*/}
+            {/*</div>*/}
 
             <div className={styles.footer__address_links}>
               <a href="tel:+79105899322">+7 910 589 93 22</a>
