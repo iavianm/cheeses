@@ -2,8 +2,6 @@
   height: calc(100vh - 90px);
   display: flex;
   justify-content: center;
-  z-index: 2;
-  position: relative;
 }
 
 .partners__container {
