@@ -17,7 +17,7 @@
   font-size: 3rem;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 4rem 0 4rem 0;
+  padding: 4rem 0;
   color: #fff;
 }
 
@@ -38,7 +38,6 @@
 
 .feedback__input_block {
   min-height: 40px;
-  border: 1px solid #fff;
 }
 
 .feedback__input_group {
@@ -46,11 +45,26 @@
   height: 100%;
   background-color: #002a3a;
   font-family: Roboto_Condensed, serif;
+  border: 1px solid #fff;
+  outline: none;
+  padding-left: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.7s;
 }
 
 .feedback__input_group::placeholder {
   color: #fff;
-  padding-left: 20px;
+}
+
+.feedback__input_group:focus {
+  border: 1px solid var(--orange-color);
+  transition: 0.7s;
+}
+
+.feedback__input_group:focus::placeholder {
+  color: transparent;
+  transition: 0.7s;
 }
 
 .feedback__area_block {
@@ -61,10 +75,98 @@
   height: 100%;
   background-color: #002a3a;
   border: 1px solid #fff;
+  outline: none;
+  padding: 10px 20px;
+  color: #fff;
+  transition: 0.7s;
 }
 
 .feedback__area_group::placeholder {
   color: #fff;
-  padding: 20px;
   font-family: Roboto_Condensed, serif;
+  text-transform: uppercase;
+}
+
+.feedback__area_group:focus {
+  border: 1px solid var(--orange-color);
+  transition: 0.7s;
+}
+
+.feedback__area_group:focus::placeholder {
+  color: transparent;
+  transition: 0.7s;
+}
+
+.feedback__checkbox_group {
+  color: #fff;
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.feedback__submit_place {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.feedback__submit_button {
+  max-width: 300px;
+  width: 100%;
+  outline: none;
+  padding: 18px 0;
+  background-color: #002a3a;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.feedback__submit_button:hover {
+  background-color: #fff;
+  border: 1px solid #002a3a;
+  color: #002a3a;
+  transition: 0.7s;
+}
+
+@media screen and (max-width: 1024px) {
+  .feedback__title {
+    font-size: 2rem;
+    padding: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .feedback__title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .feedback__title {
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 389px) {
+  .feedback__title {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .feedback__block {
+    padding: 1rem 1rem;
+  }
+
+  .feedback__submit_place {
+    margin-top: 1rem;
+  }
+
+  .feedback__submit_button {
+    padding: 14px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
 }

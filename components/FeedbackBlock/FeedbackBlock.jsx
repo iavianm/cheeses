@@ -39,25 +39,32 @@ function FeedbackBlock() {
               <div className={styles.feedback__area_block}>
                 <textarea
                   id="message"
-                  rows={8}
+                  rows={6}
                   name="message"
                   placeholder="Текст письма"
                   className={styles.feedback__area_group}
                 ></textarea>
               </div>
 
-              <div className="checkbox-group">
+              <div className={styles.feedback__checkbox_group}>
                 <input type="checkbox" id="not-robot" name="not-robot" />
                 <label htmlFor="not-robot">Я не робот</label>
               </div>
-              <div className="checkbox-group">
+              <div className={styles.feedback__checkbox_group}>
                 <input type="checkbox" id="consent" name="consent" />
                 <label htmlFor="consent">
                   Отправляя данные из этой формы, вы даете согласие на обработку
                   персональных данных
                 </label>
               </div>
-              <button type="submit">ОТПРАВИТЬ</button>
+              <div className={styles.feedback__submit_place}>
+                <button
+                  className={styles.feedback__submit_button}
+                  type="submit"
+                >
+                  ОТПРАВИТЬ
+                </button>
+              </div>
             </div>
           </div>
         </form>

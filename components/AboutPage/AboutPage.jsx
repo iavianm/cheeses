@@ -13,20 +13,26 @@ const AboutPage = () => {
                 <p>Ясногорский район, д. Санталово</p>
               </div>
               <a
+                className={styles.about__contacts_phone}
+                href="tel:+79105899322"
+              >
+                +7 910 589 93 22
+              </a>
+              <a
                 className={styles.about__contacts_email}
                 href="mailto:89105899322@mail.ru"
               >
                 89105899322@mail.ru
               </a>
             </div>
-            <div className={styles.about__text_container}>
-              <a
-                className={styles.about__contacts_phone}
-                href="tel:+79105899322"
-              >
-                +7 910 589 93 22
-              </a>
-            </div>
+            {/*<div className={styles.about__text_container}>*/}
+            {/*  <a*/}
+            {/*    className={styles.about__contacts_phone}*/}
+            {/*    href="tel:+79105899322"*/}
+            {/*  >*/}
+            {/*    +7 910 589 93 22*/}
+            {/*  </a>*/}
+            {/*</div>*/}
           </div>
         </div>
 
