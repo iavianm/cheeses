@@ -50,15 +50,15 @@ const SliderProductionBlock = (props) => {
           {props.content.map((item, index) => (
             <SwiperSlide key={index}>
               <div className={styles.slider__block_container_prod}>
-                <div className={styles.slider__block_prod}>
-                  {/*<h3 className={styles.slider__block_title}>{item.title}</h3>*/}
-                  {/*<Link*/}
-                  {/*  className={styles.slider__block_button}*/}
-                  {/*  href={item.link}*/}
-                  {/*>*/}
-                  {/*  Подробнее*/}
-                  {/*</Link>*/}
-                </div>
+                {/*<div className={styles.slider__block_prod}>*/}
+                {/*  /!*<h3 className={styles.slider__block_title}>{item.title}</h3>*!/*/}
+                {/*  /!*<Link*!/*/}
+                {/*  /!*  className={styles.slider__block_button}*!/*/}
+                {/*  /!*  href={item.link}*!/*/}
+                {/*  /!*>*!/*/}
+                {/*  /!*  Подробнее*!/*/}
+                {/*  /!*</Link>*!/*/}
+                {/*</div>*/}
                 <img
                   src={item.src}
                   alt={item.alt}
@@ -77,11 +77,17 @@ const SliderProductionBlock = (props) => {
                       <span className={styles.lot__dashed}>60 суток </span>
                     </li>
                   </ul>
-                  <a href="" className={styles.lot__button}>
+                  <Link
+                    href={`/catalog/${item.id}`}
+                    className={styles.lot__button}
+                  >
                     подробнее
-                  </a>
+                  </Link>
                 </div>
               </div>
+              <Link href={`/catalog/${item.id}`} className={""}>
+                ORIGINAL mozzarella
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

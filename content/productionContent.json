@@ -1,0 +1,61 @@
+{
+  "productionContent": [
+    {
+      "id": 1,
+      "src": "/images/cheese1.webp",
+      "alt": "Image 1",
+      "title": "Тарелка сыров для изысканного ужина",
+      "link": "/"
+    },
+    {
+      "id": 2,
+      "src": "/images/Untitled-1.png",
+      "alt": "Image 2 ",
+      "title": "Изысканный сырный борд",
+      "link": "/"
+    },
+    {
+      "id": 3,
+      "src": "/images/Untitled-1.png",
+      "alt": "Image 3 ",
+      "title": "Подача сыра с грушей и орехами",
+      "link": "/"
+    },
+    {
+      "id": 4,
+      "src": "/images/Untitled-1.png",
+      "alt": "Image 4 ",
+      "title": "Салат с моцареллой и сочными томатами",
+      "link": "/"
+    },
+    {
+      "id": 5,
+      "src": "/images/Untitled-1.png",
+      "alt": "Image 4 ",
+      "title": "Салат с моцареллой и сочными томатами",
+      "link": "/"
+    },
+    {
+      "id": 6,
+      "src": "/images/Untitled-1.png",
+      "alt": "Image 4 ",
+      "title": "Салат с моцареллой и сочными томатами",
+      "link": "/",
+      "slug": 6
+    },
+    {
+      "id": 7,
+      "src": "/images/Untitled-1.png",
+      "alt": "Image 4 ",
+      "title": "Салат с моцареллой и сочными томатами",
+      "link": "/"
+    },
+    {
+      "id": 8,
+      "src": "/images/Untitled-1.png",
+      "alt": "Image 4 ",
+      "title": "Салат с моцареллой и сочными томатами",
+      "link": "/"
+    }
+  ]
+}
