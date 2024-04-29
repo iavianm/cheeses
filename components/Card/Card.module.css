@@ -6,7 +6,7 @@ img {
   max-width: 930px;
   margin: 0 auto;
   font-size: 14px;
-  /*height: calc(100vh - 135px);*/
+  min-height: calc(100vh - 128px);
 }
 
 .card {
@@ -41,8 +41,7 @@ img {
 .card__title {
   margin-bottom: 50px;
   color: #002a3a;
-  font-family: "DINPro", sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 35px;
   line-height: 1.25;
   letter-spacing: 1px;
@@ -87,7 +86,6 @@ img {
 
 .card__subtitle {
   margin-bottom: 23px;
-  font-family: "DINPro", sans-serif;
   font-size: 21px;
   line-height: 1.25;
   letter-spacing: 1.4px;
@@ -133,7 +131,6 @@ img {
   display: inline-block;
   border: solid 1px #e1523d;
   color: #002a3a;
-  font-family: "DINPro", sans-serif;
   letter-spacing: 1.4px;
   text-decoration: none;
   text-transform: uppercase;
