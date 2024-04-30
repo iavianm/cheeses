@@ -3,7 +3,7 @@ img {
 }
 
 .container {
-  max-width: 930px;
+  max-width: 1000px;
   margin: 0 auto;
   font-size: 14px;
   min-height: calc(100vh - 128px);
@@ -13,10 +13,12 @@ img {
   display: flex;
   gap: 30px;
   padding-top: 135px;
+  margin: 0 20px;
 }
 
 .card__image_block {
   flex: 0 1 40%;
+  height: min-content;
 }
 
 .card__image {
@@ -74,7 +76,7 @@ img {
   font-size: 21px;
 }
 
-.characterictic__text {
+.characteristic__text {
   color: #002a3a;
   letter-spacing: 1.4px;
 }
@@ -142,4 +144,37 @@ img {
 .card__button:hover {
   color: white;
   background-color: #e1523d;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card__title {
+    font-size: 24px;
+  }
+
+  .card__description {
+    font-size: 16px;
+  }
+
+  .card__characteristic {
+    padding: 0 8px;
+  }
+
+  .characteristic__title {
+    font-size: 14px;
+  }
+
+  .characteristic {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .table td {
+    padding: 0 50px 11px 0;
+  }
 }

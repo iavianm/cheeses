@@ -1,14 +1,17 @@
 import styles from "./Card.module.css";
+import Image from "next/image";
 
 function Card({ content }) {
   return (
     <div className={styles.container}>
       <section className={styles.card}>
         <div className={styles.card__image_block}>
-          <img
+          <Image
             src={content.src}
+            width={500}
+            height={500}
             alt={content.alt}
-            className={styles.card__image}
+            style={{ objectFit: "cover" }}
           />
         </div>
         <div className={styles.card__text}>
@@ -19,7 +22,7 @@ function Card({ content }) {
               return (
                 <div key={i} className={styles.characteristic}>
                   <p className={styles.characteristic__title}>{item.title}</p>
-                  <p className={styles.characterictic__text}>{item.text}</p>
+                  <p className={styles.characteristic__text}>{item.text}</p>
                 </div>
               );
             })}

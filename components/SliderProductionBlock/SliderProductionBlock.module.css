@@ -1,5 +1,6 @@
 .slider__block_container_prod {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .slider__section_prod {
@@ -58,9 +59,7 @@
 .slider__img_prod {
   width: 100%;
   height: 40vh;
-  object-fit: contain;
-  /*object-position: center;*/
-  border-radius: 6px;
+  object-fit: cover;
   transition: 0.4s;
   position: relative;
 }
@@ -134,4 +133,13 @@
 
 .lot__button:hover {
   background-color: #e1523d;
+}
+
+/*.lot__link {*/
+/*  padding-top: 20px;*/
+/*}*/
+
+.lot__link:hover {
+  color: #e1523d;
+  transition: 0.5s;
 }

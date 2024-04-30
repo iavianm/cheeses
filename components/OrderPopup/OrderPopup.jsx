@@ -9,6 +9,8 @@ import {
 } from "@ant-design/icons";
 import styles from "./OrderPopup.module.css";
 
+import { productionContent } from "../../content/productionContent.json";
+
 const { Option } = Select;
 const { TextArea } = Input;
 
@@ -162,9 +164,13 @@ const OrderPopup = () => {
               onChange={handleSelectChange}
               value={formData.selectedProducts}
             >
-              <Option value="product1">Продукт 1</Option>
-              <Option value="product2">Продукт 2</Option>
-              {/* ... другие опции ... */}
+              {productionContent.map((item, index) => {
+                return (
+                  <Option key={index} value={item.title}>
+                    {item.title}
+                  </Option>
+                );
+              })}
             </Select>
           </Form.Item>
           <Form.Item label="Планируемый объем закупки">
