@@ -13,7 +13,7 @@ export default function Home() {
       <ProductionBlock />
       <AboutBlock />
       <PartnersBlock />
-      <FeedbackBlock />
+      <FeedbackBlock title={"ДЛЯ ВОПРОСОВ И ПРЕДЛОЖЕНИЙ"} />
     </main>
   );
 }

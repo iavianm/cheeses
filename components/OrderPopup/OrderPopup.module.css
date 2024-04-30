@@ -1,20 +1,24 @@
 .order__button {
-  position: absolute;
+  position: fixed;
   right: 0;
+  bottom: 0;
   text-transform: uppercase;
   font-weight: 300;
   line-height: 24px;
   font-size: 20px;
   transition: color 0.5s ease;
   color: #fff;
-  background-color: transparent;
+  background-color: var(--orange-color);
   border: none;
-  padding: 5px 10px;
+  padding: 15px 40px;
   cursor: pointer;
+  z-index: 100;
+  display: flex;
+  border-radius: 3px;
 }
 
 .order__button:hover {
-  color: var(--orange-color-active);
+  background-color: rgba(225, 82, 61, 0.8);
 }
 
 .submit__button {
@@ -40,9 +44,25 @@
   font-size: 10px;
 }
 
-@media screen and (max-width: 1024px) {
+/*@media screen and (max-width: 1024px) {*/
+/*  .order__button {*/
+/*    right: auto;*/
+/*    left: auto;*/
+/*  }*/
+/*}*/
+
+.order__icon {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+  color: white;
+  fill: #fff;
+}
+
+@media screen and (max-width: 576px) {
   .order__button {
-    right: auto;
-    left: auto;
+    width: 100vw;
+    justify-content: center;
   }
 }

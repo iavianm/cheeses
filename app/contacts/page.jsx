@@ -6,7 +6,7 @@ const Contacts = () => {
   return (
     <main className={styles.main}>
       <ContactPage />
-      <FeedbackBlock />
+      <FeedbackBlock title={"ДЛЯ ВОПРОСОВ И ПРЕДЛОЖЕНИЙ"} />
     </main>
   );
 };

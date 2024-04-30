@@ -10,7 +10,7 @@ const ContactPage = () => {
             <div className={styles.about__text_container}>
               <div className={styles.about__text}>
                 <p>Тульская область</p>
-                <p>Ясногорский район, д. Санталово</p>
+                <p>Ясногорский район, пос. Санталовский, ул. Дорожная, д. 3</p>
               </div>
               <a
                 className={styles.about__contacts_phone}

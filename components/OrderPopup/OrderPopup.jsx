@@ -10,6 +10,8 @@ import {
 import styles from "./OrderPopup.module.css";
 
 import { productionContent } from "../../content/productionContent.json";
+import Image from "next/image";
+import { ReactSVG } from "react-svg";
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -96,7 +98,14 @@ const OrderPopup = () => {
   return (
     <>
       <div className={styles.order__button} onClick={showModal} type="button">
-        Заказать
+        <div>
+          <ReactSVG
+            src={"/images/cheese-order.svg"}
+            alt={"image"}
+            className={styles.order__icon}
+          />
+        </div>
+        Заявка на поставку
       </div>
       <Modal
         title="ЗАЯВКА НА ПОСТАВКУ ПРОДУКЦИИ"

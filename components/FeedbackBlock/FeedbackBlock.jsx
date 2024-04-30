@@ -1,11 +1,11 @@
 import styles from "./FeedbackBlock.module.css";
 
-function FeedbackBlock() {
+function FeedbackBlock({ title }) {
   return (
     <div className={styles.feedback__container}>
       <div className={styles.feedback__block}>
         <form action="/" method="post">
-          <h2 className={styles.feedback__title}>ДЛЯ ВОПРОСОВ И ПРЕДЛОЖЕНИЙ</h2>
+          <h2 className={styles.feedback__title}>{title}</h2>
           <div className={styles.feedback__form_container}>
             <div className={styles.feedback__form_group}>
               <div className={styles.feedback__input_block}>

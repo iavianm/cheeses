@@ -96,6 +96,10 @@
   font-size: 0.6rem;
 }
 
+.footer__bottom {
+  height: 60px;
+}
+
 .footer__contact a {
   color: #ffffff;
   text-decoration: none;
