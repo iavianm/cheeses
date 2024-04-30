@@ -1,7 +1,7 @@
 import styles from "./ProductionPage.module.css";
 import styles2 from "../SliderProductionBlock/SliderProductionBlock.module.css";
 
-import { productionContent } from "../../content/productionContent.json";
+import { productionContent } from "@/content/productionContent.json";
 import Image from "next/image";
 import Link from "next/link";
 
