@@ -14,7 +14,6 @@ import {
   Scrollbar,
 } from "swiper/modules";
 import Link from "next/link";
-import Image from "next/image";
 
 const SliderProductionBlock = (props) => {
   return (

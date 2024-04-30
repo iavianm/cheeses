@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 import Link from "next/link";
-import { navItems } from "../../content/navItemsContent.json";
+import { navItems } from "@/content/navItemsContent.json";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

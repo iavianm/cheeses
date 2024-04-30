@@ -1,7 +1,7 @@
 import styles from "@/components/PartnersBlock/PartnersBlock.module.css";
 import Link from "next/link";
 import SliderPartnersBlock from "@/components/SliderPartnersBlock/SliderPartnersBlock";
-import { partnersImages } from "../../content/sliderPartnersImages.json";
+import { partnersImages } from "@/content/sliderPartnersImages.json";
 
 function PartnersBlock() {
   return (

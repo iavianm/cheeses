@@ -1,7 +1,7 @@
 import styles from "./ProductionBlock.module.css";
 import Link from "next/link";
 import SliderProductionBlock from "@/components/SliderProductionBlock/SliderProductionBlock";
-import { productionContent } from "../../content/productionContent.json";
+import { productionContent } from "@/content/productionContent.json";
 
 function ProductionBlock() {
   return (
