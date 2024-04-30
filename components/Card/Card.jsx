@@ -11,7 +11,7 @@ function Card({ content }) {
             width={500}
             height={500}
             alt={content.alt}
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", width: "100%" }}
           />
         </div>
         <div className={styles.card__text}>
