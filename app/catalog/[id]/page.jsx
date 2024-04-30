@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { productionContent } from "@/content/productionContent.json";
+import { productionContent } from "@/content/productionContent";
 import Card from "@/components/Card/Card";
 
 const ProductPage = ({ params }) => {

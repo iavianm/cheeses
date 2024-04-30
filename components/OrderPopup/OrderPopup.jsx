@@ -9,7 +9,7 @@ import {
 } from "@ant-design/icons";
 import styles from "./OrderPopup.module.css";
 
-import { productionContent } from "@/content/productionContent.json";
+import { productionContent } from "@/content/productionContent";
 import { ReactSVG } from "react-svg";
 
 const { Option } = Select;

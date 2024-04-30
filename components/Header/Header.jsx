@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
 import Link from "next/link";
 import Navigation from "@/components/Navigation/Navigation";
-import { navItems } from "@/content/navItemsContent.json";
+import { navItems } from "@/content/navItemsContent";
 import BurgerMenu from "@/components/BurgerMenu/BurgerMenu";
 
 function Header() {
