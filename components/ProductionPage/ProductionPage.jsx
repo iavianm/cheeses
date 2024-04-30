@@ -1,7 +1,7 @@
 import styles from "./ProductionPage.module.css";
 import styles2 from "../SliderProductionBlock/SliderProductionBlock.module.css";
 
-import { productionContent } from "@/content/productionContent.json";
+import { productionContent } from "@/content/productionContent";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,7 +18,7 @@ function ProductionPage() {
                     <Image
                       src={item.src}
                       layout="fill"
-                      objectFit="cover"
+                      style={{ objectFit: "cover", width: "100%" }}
                       alt={item.alt}
                     />
                   </div>

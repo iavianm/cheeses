@@ -1,5 +1,5 @@
 import styles from "./PartnersPage.module.css";
-import { partnersImages } from "@/content/sliderPartnersImages.json";
+import { partnersImages } from "@/content/sliderPartnersImages";
 import styles2 from "@/components/SliderProductionBlock/SliderProductionBlock.module.css";
 import styles3 from "@/components/ProductionPage/ProductionPage.module.css";
 import Image from "next/image";
