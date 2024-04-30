@@ -1,12 +1,10 @@
 import styles from "./page.module.css";
-import AboutPage from "@/components/AboutPage/AboutPage";
-import FeedbackBlock from "@/components/FeedbackBlock/FeedbackBlock";
+import ProductionPage from "@/components/ProductionPage/ProductionPage";
 
 const Catalog = () => {
   return (
     <main className={styles.main}>
-      <AboutPage />
-      <FeedbackBlock />
+      <ProductionPage />
     </main>
   );
 };

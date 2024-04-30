@@ -1,11 +1,11 @@
 import styles from "./page.module.css";
-import AboutPage from "@/components/AboutPage/AboutPage";
 import FeedbackBlock from "@/components/FeedbackBlock/FeedbackBlock";
+import ContactPage from "@/components/ContactPage/ContactPage";
 
 const Contacts = () => {
   return (
     <main className={styles.main}>
-      <AboutPage />
+      <ContactPage />
       <FeedbackBlock />
     </main>
   );

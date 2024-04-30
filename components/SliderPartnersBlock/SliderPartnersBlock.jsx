@@ -47,15 +47,6 @@ function SliderPartnersBlock(props) {
           {props.content.map((item, index) => (
             <SwiperSlide key={index}>
               <div className={styles.slider__block_container_prod}>
-                <div className={styles.slider__block_prod}>
-                  {/*<h3 className={styles.slider__block_title}>{item.title}</h3>*/}
-                  {/*<Link*/}
-                  {/*  className={styles.slider__block_button}*/}
-                  {/*  href={item.link}*/}
-                  {/*>*/}
-                  {/*  Подробнее*/}
-                  {/*</Link>*/}
-                </div>
                 <img
                   src={item.src}
                   alt={item.alt}

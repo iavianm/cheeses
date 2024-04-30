@@ -1,12 +1,10 @@
 import styles from "./page.module.css";
-import AboutPage from "@/components/AboutPage/AboutPage";
-import FeedbackBlock from "@/components/FeedbackBlock/FeedbackBlock";
+import PartnersPage from "@/components/PartnersPage/PartnersPage";
 
 const Partners = () => {
   return (
     <main className={styles.main}>
-      <AboutPage />
-      <FeedbackBlock />
+      <PartnersPage />
     </main>
   );
 };

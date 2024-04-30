@@ -9,7 +9,7 @@ function ProductionBlock() {
       <div className={styles.production__container}>
         <div className={styles.production__head}>
           <h1 className={styles.production__head_title}>Продукция</h1>
-          <Link className={styles.production__head_link} href={"/"}>
+          <Link className={styles.production__head_link} href={"/catalog"}>
             смотреть все
           </Link>
         </div>

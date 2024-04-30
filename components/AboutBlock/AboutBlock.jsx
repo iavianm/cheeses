@@ -8,34 +8,23 @@ function AboutBlock() {
           <h3 className={styles.about__title}>О нас</h3>
           <p className={styles.about__text}>
             <span className={styles.about__span}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab,
-              alias aspernatur beatae blanditiis commodi corporis dignissimos
-              distinctio facilis fugiat fugit incidunt iusto libero, odio quae
-              quos ratione sapiente ut veniam?
+              Компания ООО «Ясногорские сыры» специализируется на производстве
+              сыра и сырных продуктов для промышленного производства
+              полуфабрикатов, мясных и хлебобулочных продуктов. Основным видом
+              деятельности является: «Производство сыра и сырных продуктов».
             </span>
             <span className={styles.about__span}>
-              Ad architecto dicta distinctio, eligendi eos error fugit id ipsam
-              natus non nulla numquam quasi quod recusandae tempore ut veritatis
-              voluptas. A architecto deleniti dignissimos earum fuga impedit
-              quia quis.
+              С 2017 года мы производим имитационные и аналоговые сыры, а также
+              сырный продукт. За это время мы сформировали профессиональную
+              команду менеджеров и технологов, наработали собственную научную
+              базу. За довольно короткий срок у нашей компании появилось много
+              клиентов.
             </span>
             <span className={styles.about__span}>
-              Aliquid, beatae consequatur culpa cumque deleniti dolore dolores
-              doloribus eaque expedita harum hic ipsam iure laudantium libero
-              maxime, molestiae neque nihil non nulla numquam omnis qui
-              quisquam, ratione suscipit voluptatem!
-            </span>
-            <span className={styles.about__span}>
-              Aperiam doloribus esse mollitia nemo numquam officia quasi quo
-              ratione repellat temporibus? A ab amet aut dolore ex iste laborum,
-              natus perferendis quidem voluptates! Aspernatur dolor maxime
-              perferendis porro quibusdam.
-            </span>
-            <span className={styles.about__span}>
-              Alias beatae consequuntur deleniti eveniet fugit illum impedit
-              inventore ipsam magnam maxime molestias necessitatibus nemo non
-              nulla officia perferendis, porro quaerat quam sapiente sequi
-              similique sint suscipit tempora tenetur vitae.
+              В производстве продуктов мы ориентируемся на передовые европейские
+              предприятия. Потребность в наших продуктах постоянно растет,
+              поэтому мы постоянно расширяем ассортимент и совершенствуем
+              рецептуры.
             </span>
           </p>
         </div>
