@@ -9,6 +9,10 @@ import {
 } from "@ant-design/icons";
 import styles from "./OrderPopup.module.css";
 
+import { productionContent } from "../../content/productionContent.json";
+import Image from "next/image";
+import { ReactSVG } from "react-svg";
+
 const { Option } = Select;
 const { TextArea } = Input;
 
@@ -94,7 +98,14 @@ const OrderPopup = () => {
   return (
     <>
       <div className={styles.order__button} onClick={showModal} type="button">
-        Заказать
+        <div>
+          <ReactSVG
+            src={"/images/cheese-order.svg"}
+            alt={"image"}
+            className={styles.order__icon}
+          />
+        </div>
+        Заявка на поставку
       </div>
       <Modal
         title="ЗАЯВКА НА ПОСТАВКУ ПРОДУКЦИИ"
@@ -162,9 +173,13 @@ const OrderPopup = () => {
               onChange={handleSelectChange}
               value={formData.selectedProducts}
             >
-              <Option value="product1">Продукт 1</Option>
-              <Option value="product2">Продукт 2</Option>
-              {/* ... другие опции ... */}
+              {productionContent.map((item, index) => {
+                return (
+                  <Option key={index} value={item.title}>
+                    {item.title}
+                  </Option>
+                );
+              })}
             </Select>
           </Form.Item>
           <Form.Item label="Планируемый объем закупки">

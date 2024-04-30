@@ -1,5 +1,6 @@
 .slider__block_container_prod {
   position: relative;
+  margin-bottom: 20px;
 }
 
 .slider__section_prod {
@@ -57,10 +58,8 @@
 
 .slider__img_prod {
   width: 100%;
-  height: 45vh;
+  height: 40vh;
   object-fit: cover;
-  /*object-position: center;*/
-  border-radius: 6px;
   transition: 0.4s;
   position: relative;
 }
@@ -87,7 +86,7 @@
   opacity: 0;
   background-color: rgba(255, 255, 255, 0.75);
   transition: 0.4s;
-  z-index: 10;
+  z-index: 1;
 }
 
 .slider__block_container_prod:hover .lot__hover {
@@ -134,4 +133,13 @@
 
 .lot__button:hover {
   background-color: #e1523d;
+}
+
+/*.lot__link {*/
+/*  padding-top: 20px;*/
+/*}*/
+
+.lot__link:hover {
+  color: #e1523d;
+  transition: 0.5s;
 }

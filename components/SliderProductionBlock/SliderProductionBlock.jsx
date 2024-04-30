@@ -14,6 +14,7 @@ import {
   Scrollbar,
 } from "swiper/modules";
 import Link from "next/link";
+import Image from "next/image";
 
 const SliderProductionBlock = (props) => {
   return (
@@ -50,15 +51,6 @@ const SliderProductionBlock = (props) => {
           {props.content.map((item, index) => (
             <SwiperSlide key={index}>
               <div className={styles.slider__block_container_prod}>
-                <div className={styles.slider__block_prod}>
-                  {/*<h3 className={styles.slider__block_title}>{item.title}</h3>*/}
-                  {/*<Link*/}
-                  {/*  className={styles.slider__block_button}*/}
-                  {/*  href={item.link}*/}
-                  {/*>*/}
-                  {/*  Подробнее*/}
-                  {/*</Link>*/}
-                </div>
                 <img
                   src={item.src}
                   alt={item.alt}
@@ -66,22 +58,28 @@ const SliderProductionBlock = (props) => {
                 />
                 <div className={styles.lot__hover}>
                   <ul className={styles.lot__list}>
-                    <li>
-                      Вес <span className={styles.lot__dashed}>125 грамм </span>
-                    </li>
-                    <li>
-                      МЖД <span className={styles.lot__dashed}>50 % </span>
-                    </li>
-                    <li>
-                      Срок хранения
-                      <span className={styles.lot__dashed}>60 суток </span>
-                    </li>
+                    {item.short.map((item, i) => {
+                      return (
+                        <li key={i}>
+                          {item.title}
+                          <span className={styles.lot__dashed}>
+                            {item.text}
+                          </span>
+                        </li>
+                      );
+                    })}
                   </ul>
-                  <a href="" className={styles.lot__button}>
+                  <Link
+                    href={`/catalog/${item.id}`}
+                    className={styles.lot__button}
+                  >
                     подробнее
-                  </a>
+                  </Link>
                 </div>
               </div>
+              <Link href={`/catalog/${item.id}`} className={styles.lot__link}>
+                {item.title}
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

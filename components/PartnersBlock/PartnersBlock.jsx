@@ -9,7 +9,7 @@ function PartnersBlock() {
       <div className={styles.partners__container}>
         <div className={styles.partners__head}>
           <h1 className={styles.partners__head_title}>Партнеры</h1>
-          <Link className={styles.partners__head_link} href={"/"}>
+          <Link className={styles.partners__head_link} href={"/partners"}>
             смотреть все
           </Link>
         </div>

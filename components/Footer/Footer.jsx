@@ -44,6 +44,7 @@ const Footer = () => {
         <div className={`${styles.footer__section} ${styles.footer__copy}`}>
           <p>&copy;{currentYear} Ясногорские сыры. Все права защищены</p>
         </div>
+        <div className={styles.footer__bottom}></div>
       </div>
     </footer>
   );

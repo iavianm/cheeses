@@ -1,9 +1,9 @@
 .about__section {
   margin: 0 auto;
   width: 100%;
-  /*text-align: center;*/
   padding: 0;
-  height: calc(100vh - 91px);
+  height: 100%;
+  min-height: calc(100vh - 218px);
 }
 
 .about__container {
@@ -12,12 +12,12 @@
   border-color: transparent;
   border-style: solid;
   padding: 10px;
+  margin: 0 2rem;
 }
 
 .about__title_container {
   width: 100%;
   max-width: 70%;
-  margin-left: 2rem;
   padding: 4rem 0 1rem 0;
 }
 
@@ -30,90 +30,66 @@
 .about__text_container {
   display: flex;
   gap: 20px;
-  /*justify-content: center;*/
   margin: 40px auto 20px 0;
   flex-direction: column;
 }
 
 .about__body {
-  display: flex;
 }
 
 .about__text {
-  margin: 0;
+}
+
+.about__text_title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 20px 0;
   padding: 0;
-  font-size: 20px;
-  text-align: left;
+  hyphens: auto;
+  word-break: break-word;
+  text-justify: inter-word;
 }
 
-.about__text p {
-  margin: 0 0 7px 0;
-}
-
-.about__text p:last-of-type {
-  margin: 0;
-}
-
-.about__contacts {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  text-align: right;
-}
-
-.about__contacts_email {
-  color: black;
+.about__text_body {
   font-size: 1.2rem;
-  transition: all 0.5s ease;
+  margin: 0 0 10px 0;
+  font-weight: 300;
+  padding: 0;
+  hyphens: auto;
+  word-break: break-word;
+  text-justify: inter-word;
 }
 
-.about__contacts_phone {
-  color: black;
-  font-size: 1.2rem;
-  transition: all 0.5s ease;
-}
-
-.about__contacts_email:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  color: var(--orange-color-hover);
-}
-
-.about__contacts_phone:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  color: var(--orange-color-hover);
-}
-
-.about__frame {
+.about__image_container {
+  position: relative;
+  height: 430px;
   width: 100%;
-
-  height: 100vh;
-  border: none;
-  margin: 0 auto;
-  border-radius: 7px;
 }
 
 @media screen and (max-width: 768px) {
+  .about__text_title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+  }
+
+  .about__text_body {
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+    font-weight: 300;
+  }
+
   .about__section {
     padding: 20px 0;
-  }
-
-  .about__title {
-    font-size: 36px;
-  }
-
-  .about__text {
-    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .about__title {
-    font-size: 28px;
+  .about__container {
+    margin: 0 1rem;
   }
 
-  .about__text {
-    font-size: 12px;
+  .about__title {
+    font-size: 28px;
   }
 }
