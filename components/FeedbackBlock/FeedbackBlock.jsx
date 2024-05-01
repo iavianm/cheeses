@@ -1,6 +1,29 @@
+"use client";
 import styles from "./FeedbackBlock.module.css";
+import { useEffect, useState } from "react";
+import { normalizePhone } from "@/utils/normalize_phone";
 
 function FeedbackBlock({ title }) {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [notRobotChecked, setNotRobotChecked] = useState(false);
+  const [consentChecked, setConsentChecked] = useState(false);
+  const [formData, setFormData] = useState(false);
+
+  const handleInputChange = (e) => {
+    let filteredValue = e.target.value;
+
+    let phone = normalizePhone(filteredValue);
+
+    setPhone(phone);
+  };
+
+  useEffect(() => {
+    const isValid =
+      (name && phone && notRobotChecked && consentChecked) || false;
+    setFormData(isValid);
+  }, [name, phone, notRobotChecked, consentChecked]);
+
   return (
     <div className={styles.feedback__container}>
       <div className={styles.feedback__block}>
@@ -14,6 +37,7 @@ function FeedbackBlock({ title }) {
                   id="name"
                   name="name"
                   placeholder="Ваше имя"
+                  onChange={(e) => setName(e.target.value)}
                   className={styles.feedback__input_group}
                 />
               </div>
@@ -24,6 +48,8 @@ function FeedbackBlock({ title }) {
                   id="phone"
                   name="phone"
                   placeholder="+7 (XXX) XXX-XX-XX"
+                  onChange={handleInputChange}
+                  value={phone}
                   className={styles.feedback__input_group}
                 />
               </div>
@@ -47,11 +73,21 @@ function FeedbackBlock({ title }) {
               </div>
 
               <div className={styles.feedback__checkbox_group}>
-                <input type="checkbox" id="not-robot" name="not-robot" />
+                <input
+                  type="checkbox"
+                  id="not-robot"
+                  name="not-robot"
+                  onChange={(e) => setNotRobotChecked(e.target.checked)}
+                />
                 <label htmlFor="not-robot">Я не робот</label>
               </div>
               <div className={styles.feedback__checkbox_group}>
-                <input type="checkbox" id="consent" name="consent" />
+                <input
+                  type="checkbox"
+                  id="consent"
+                  name="consent"
+                  onChange={(e) => setConsentChecked(e.target.checked)}
+                />
                 <label htmlFor="consent">
                   Отправляя данные из этой формы, вы даете согласие на обработку
                   персональных данных
@@ -61,6 +97,7 @@ function FeedbackBlock({ title }) {
                 <button
                   className={styles.feedback__submit_button}
                   type="submit"
+                  disabled={!formData}
                 >
                   ОТПРАВИТЬ
                 </button>
