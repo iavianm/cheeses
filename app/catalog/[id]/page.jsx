@@ -1,19 +1,15 @@
-"use client";
-import { useRouter } from "next/navigation";
+import { notFound } from "next/navigation";
 import productionData from "@/content/productionContent.json";
 import Card from "@/components/Card/Card";
 
 const ProductPage = ({ params }) => {
   const id = params["id"];
-  const router = useRouter();
 
   const product = productionData.productionContent.find(
-    (item) => item.id == id,
+    (item) => item.id.toString() === id,
   );
 
-  if (!product) {
-    router.push("/404");
-  }
+  if (!product) notFound();
 
   if (!product) {
     return null;
