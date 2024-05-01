@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 import Link from "next/link";
-import { navItems } from "@/content/navItemsContent";
+import navData from "@/content/navItemsContent.json";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,7 +17,7 @@ const Footer = () => {
             />
           </Link>
           <ul className={styles.footer__nav}>
-            {navItems.map((link) => {
+            {navData.navItems.map((link) => {
               return (
                 <li key={link.label}>
                   <Link href={link.href}>{link.label}</Link>

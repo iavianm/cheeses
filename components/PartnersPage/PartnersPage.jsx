@@ -1,5 +1,5 @@
 import styles from "./PartnersPage.module.css";
-import { partnersImages } from "@/content/sliderPartnersImages";
+import partnersData from "@/content/sliderPartnersImages.json";
 import styles2 from "@/components/SliderProductionBlock/SliderProductionBlock.module.css";
 import styles3 from "@/components/ProductionPage/ProductionPage.module.css";
 import Image from "next/image";
@@ -9,7 +9,7 @@ function PartnersPage() {
     <section className={styles.partners__section}>
       <div className={styles3.production__container}>
         <div className={styles.grid__container}>
-          {partnersImages.map((item, i) => {
+          {partnersData.partnersImages.map((item, i) => {
             return (
               <div key={i} className={styles.grid__item}>
                 <div className={styles.image__container}>

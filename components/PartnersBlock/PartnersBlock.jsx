@@ -1,7 +1,7 @@
 import styles from "@/components/PartnersBlock/PartnersBlock.module.css";
 import Link from "next/link";
 import SliderPartnersBlock from "@/components/SliderPartnersBlock/SliderPartnersBlock";
-import { partnersImages } from "@/content/sliderPartnersImages";
+import partnersData from "@/content/sliderPartnersImages";
 
 function PartnersBlock() {
   return (
@@ -23,7 +23,7 @@ function PartnersBlock() {
           различных регионах.
         </article>
         <div className={styles.partners__slider}>
-          <SliderPartnersBlock content={partnersImages} />
+          <SliderPartnersBlock content={partnersData.partnersImages} />
         </div>
       </div>
     </section>

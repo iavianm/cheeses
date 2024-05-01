@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
 import Link from "next/link";
 import Navigation from "@/components/Navigation/Navigation";
-import { navItems } from "@/content/navItemsContent";
+import navData from "@/content/navItemsContent.json";
 import BurgerMenu from "@/components/BurgerMenu/BurgerMenu";
 
 function Header() {
@@ -9,8 +9,8 @@ function Header() {
     <header className={styles.header}>
       <div className={styles.header__body}>
         <Link href="/" className={styles.header__logo} />
-        <Navigation navLinks={navItems} />
-        <BurgerMenu navLinks={navItems} />
+        <Navigation navLinks={navData.navItems} />
+        <BurgerMenu navLinks={navData.navItems} />
       </div>
     </header>
   );

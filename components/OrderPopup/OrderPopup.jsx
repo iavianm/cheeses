@@ -9,9 +9,9 @@ import {
 } from "@ant-design/icons";
 import styles from "./OrderPopup.module.css";
 
-import { productionContent } from "@/content/productionContent";
+import productionData from "@/content/productionContent.json";
 import { ReactSVG } from "react-svg";
-import { normalizePhone } from "@/utils/normalize_phone";
+import { normalizePhone } from "@/functions/normalize_phone";
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -183,7 +183,7 @@ const OrderPopup = () => {
               onChange={handleSelectChange}
               value={formData.selectedProducts}
             >
-              {productionContent.map((item, index) => {
+              {productionData.productionContent.map((item, index) => {
                 return (
                   <Option key={index} value={item.title}>
                     {item.title}
