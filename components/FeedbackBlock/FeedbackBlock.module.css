@@ -124,6 +124,18 @@
   transition: 0.7s;
 }
 
+.feedback__submit_button:disabled {
+  background-color: #909293;
+  cursor: not-allowed;
+}
+
+.feedback__submit_button:disabled:hover {
+  background-color: #909293;
+  cursor: not-allowed;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
 .feedback__submit_button:hover {
   background-color: #fff;
   border: 1px solid #002a3a;

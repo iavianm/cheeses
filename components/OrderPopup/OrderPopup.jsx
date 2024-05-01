@@ -11,6 +11,7 @@ import styles from "./OrderPopup.module.css";
 
 import { productionContent } from "@/content/productionContent";
 import { ReactSVG } from "react-svg";
+import { normalizePhone } from "@/utils/normalize_phone";
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -54,7 +55,13 @@ const OrderPopup = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    let filteredValue = value;
+
+    if (name === "phone") {
+      filteredValue = normalizePhone(filteredValue);
+    }
+
+    setFormData((prev) => ({ ...prev, [name]: filteredValue }));
   };
 
   const handleCheckboxChange = (e) => {
@@ -127,6 +134,7 @@ const OrderPopup = () => {
               placeholder="Введите ваше имя"
               onChange={handleInputChange}
               value={formData.name}
+              allowClear
             />
           </Form.Item>
           <Form.Item
@@ -140,10 +148,11 @@ const OrderPopup = () => {
               prefix={<PhoneOutlined />}
               addonBefore="+7"
               style={{ width: "100%" }}
-              placeholder="(XXXX)-XXX-XX-XX"
+              placeholder="(XXX)-XXX-XX-XX"
               name="phone"
               onChange={handleInputChange}
               value={formData.phone}
+              allowClear
             />
           </Form.Item>
           <Form.Item label="E-mail">
@@ -153,6 +162,7 @@ const OrderPopup = () => {
               onChange={handleInputChange}
               name="email"
               value={formData.email}
+              allowClear
             />
           </Form.Item>
           <Form.Item label="Ваш город">
@@ -162,6 +172,7 @@ const OrderPopup = () => {
               onChange={handleInputChange}
               value={formData.city}
               name="city"
+              allowClear
             />
           </Form.Item>
           <Form.Item label="Выберите продукт">
@@ -187,6 +198,7 @@ const OrderPopup = () => {
               onChange={handleInputChange}
               name="quantity"
               value={formData.quantity}
+              allowClear
             />
           </Form.Item>
           <Form.Item label="Дополнительная информация">
@@ -195,6 +207,7 @@ const OrderPopup = () => {
               name="description"
               onChange={handleInputChange}
               value={formData.description}
+              allowClear
             />
           </Form.Item>
           <Form.Item>
