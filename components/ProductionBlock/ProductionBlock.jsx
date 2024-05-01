@@ -1,7 +1,7 @@
 import styles from "./ProductionBlock.module.css";
 import Link from "next/link";
 import SliderProductionBlock from "@/components/SliderProductionBlock/SliderProductionBlock";
-import { productionContent } from "@/content/productionContent";
+import productionData from "@/content/productionContent.json";
 
 function ProductionBlock() {
   return (
@@ -14,7 +14,7 @@ function ProductionBlock() {
           </Link>
         </div>
         <div className={styles.production__slider}>
-          <SliderProductionBlock content={productionContent} />
+          <SliderProductionBlock content={productionData.productionContent} />
         </div>
       </div>
     </section>

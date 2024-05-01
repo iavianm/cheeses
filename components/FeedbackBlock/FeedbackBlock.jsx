@@ -1,7 +1,7 @@
 "use client";
 import styles from "./FeedbackBlock.module.css";
 import { useEffect, useState } from "react";
-import { normalizePhone } from "@/utils/normalize_phone";
+import { normalizePhone } from "@/functions/normalize_phone";
 
 function FeedbackBlock({ title }) {
   const [name, setName] = useState("");
