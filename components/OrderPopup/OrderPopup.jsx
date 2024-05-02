@@ -146,9 +146,8 @@ const OrderPopup = () => {
           >
             <Input
               prefix={<PhoneOutlined />}
-              addonBefore="+7"
               style={{ width: "100%" }}
-              placeholder="(XXX)-XXX-XX-XX"
+              placeholder="7 (XXX)-XXX-XX-XX"
               name="phone"
               onChange={handleInputChange}
               value={formData.phone}

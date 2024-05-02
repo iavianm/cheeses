@@ -1,6 +1,10 @@
 export const normalizePhone = (phone) => {
   let filteredValue = phone.replace(/\D/g, "");
 
+  if (filteredValue.startsWith("7")) {
+    filteredValue = filteredValue.slice(1);
+  }
+
   filteredValue = filteredValue
     .slice(0, 10)
     .split("")
@@ -12,5 +16,5 @@ export const normalizePhone = (phone) => {
       return acc + digit;
     }, "");
 
-  return filteredValue;
+  return `7 ${filteredValue}`;
 };

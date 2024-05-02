@@ -47,7 +47,7 @@ function FeedbackBlock({ title }) {
                   type="tel"
                   id="phone"
                   name="phone"
-                  placeholder="+7 (XXX) XXX-XX-XX"
+                  placeholder="7 (XXX)-XXX-XX-XX"
                   onChange={handleInputChange}
                   value={phone}
                   className={styles.feedback__input_group}
