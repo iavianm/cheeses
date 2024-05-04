@@ -13,9 +13,7 @@ function ProductionBlock() {
             смотреть все
           </Link>
         </div>
-        <div className={styles.production__slider}>
-          <SliderProductionBlock content={productionData.productionContent} />
-        </div>
+        <SliderProductionBlock content={productionData.productionContent} />
       </div>
     </section>
   );

@@ -44,10 +44,9 @@
 
 .slider__section {
   scroll-snap-align: start;
-  background-color: #1b0c42;
   overflow: hidden;
   width: 100%;
-  height: calc(100vh - 90px);
+  min-height: calc(100vh - 90px);
   margin: 90px auto 0 auto;
 }
 

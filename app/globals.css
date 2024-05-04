@@ -35,6 +35,10 @@ a {
   --orange-color-active: rgb(225, 82, 61);
 }
 
+.swiper {
+  bottom: 20px !important;
+}
+
 .swiper-pagination {
   bottom: 20% !important;
   display: flex !important;
